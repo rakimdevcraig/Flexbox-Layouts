@@ -1,0 +1,88 @@
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.column1{
+    height: 30vh;
+    border: 1px solid black;
+    justify-content: space-between;
+}
+
+.column2{
+    margin-top: 1rem;
+    height: 30vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.column3{
+    margin-top: 1rem;
+    height: 30vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.rowa{
+    display: flex;
+    justify-content: center;
+}
+.rowb{
+    display: flex;
+    width:65vw;
+    background-color: orchid;
+    justify-content: center;
+}
+
+.rowc{
+    display: flex;
+    width:33vw;
+    background-color: powderblue;
+    justify-content: center;
+}
+
+.rowd{
+    display: flex;
+    width:65vw;
+    background-color: salmon;
+    justify-content: center;
+}
+
+.rowe{
+    display: flex;
+    background-color: skyblue;
+    width:33vw;
+    justify-content: center;
+}
+
+@media screen and (max-width: 575px){
+    /* put class in here to make column */
+    .column2{
+        flex-wrap: wrap;
+    }
+    
+    .column3{
+        margin-top: 1rem;
+        justify-content: space-between;
+    }
+    
+    .rowb{
+        margin-top: 1rem;
+        width: 100vh;
+    }
+
+    .rowc{
+        width: 100vh;
+        margin-top: 1rem;
+    }
+
+    .rowd{
+        width: 48vw;
+
+    }
+
+    .rowe{
+        width: 48vw;
+    }
+}
