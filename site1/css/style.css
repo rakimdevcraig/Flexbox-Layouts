@@ -1,0 +1,33 @@
+.container{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.row{
+    margin-top: 1rem;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    height: 50vh;
+}
+
+.block{
+    display: flex;
+    height:15vh;
+    width: 25%;
+    background-color: aqua;
+    /* text-align: center; */
+    align-items: center;
+    justify-content: center;
+    /* flex-direction: column; */
+
+}
+
+@media screen and (max-width: 575px){
+    /* put class in here to make column */
+    .row{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
